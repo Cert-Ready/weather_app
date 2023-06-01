@@ -1,8 +1,8 @@
-const toggleEl = document.querySelector('#temp-toggle');
+export default async function addClickEV(el) {
+  el.addEventListener('click', convert);
+}
 
-toggleEl.addEventListener('click', handleConversion);
-
-function handleConversion(e) {
+function convert(e) {
   const tempSymbol = document.querySelectorAll('.temp-symbol-letter');
   const tempValue = document.querySelectorAll('.temp-value');
 
