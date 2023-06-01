@@ -20,3 +20,6 @@ The Odin Project - Weather App
 ## Assets & external code
 
 - [Normalize.css v8.0.1](https://necolas.github.io/normalize.css/)
+- [Fonts](https://fonts.google.com/)
+- [Icons](https://pictogrammers.com/)
+- [Weather Icons](https://www.weatherapi.com/docs/#weather-icons)
