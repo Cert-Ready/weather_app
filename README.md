@@ -16,3 +16,7 @@ The Odin Project - Weather App
 ## API
 
 - [Weather API](https://www.weatherapi.com/)
+
+## Assets & external code
+
+- [Normalize.css v8.0.1](https://necolas.github.io/normalize.css/)
