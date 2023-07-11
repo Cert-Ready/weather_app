@@ -24,17 +24,18 @@
   --size-fluid-3: clamp(3rem, 4vw, 4rem);
 
   /* color */
-  --gray-0: #f9fafb;
+  --gray-0: hsl(210, 20%, 98%);
   --gray-5: hsl(210, 7%, 56%);
-  --gray-12: #030507;
+  --gray-12: hsl(210, 40%, 2%);
   --accent-0: hsl(207, 90%, 54%);
+  --accent-1: hsl(349, 90%, 54%);
   --gray-12-transparent: hsla(0, 0%, 0%, 0.7);
 
   /* misc */
   --pri-transition-time: 500ms;
 
   /* grad  */
-  --grad-pri-bg: linear-gradient(
+  /* --grad-pri-bg: linear-gradient(
       41deg,
       rgba(107, 107, 107, 0.04) 0%,
       rgba(107, 107, 107, 0.04) 8%,
@@ -90,7 +91,24 @@
       rgba(91, 91, 91, 0.04) 20%,
       rgba(91, 91, 91, 0.04) 100%
     ),
-    linear-gradient(90deg, rgb(10, 17, 72), rgb(35, 148, 228));
+    linear-gradient(90deg, rgb(10, 17, 72), rgb(35, 148, 228)); */
+
+  --grad-pri-bg: radial-gradient(circle at center center, transparent 0%, rgb(33, 33, 33) 99%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(163, 163, 163, 0.2) 0px,
+      rgba(163, 163, 163, 0.2) 1px,
+      transparent 1px,
+      transparent 6px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(163, 163, 163, 0.2) 0px,
+      rgba(163, 163, 163, 0.2) 1px,
+      transparent 1px,
+      transparent 6px
+    ),
+    linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
 }
 
 /* set core body defaults

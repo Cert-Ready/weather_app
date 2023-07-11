@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../css/index.css";
 import "../css/App.css";
 import "../css/normalize.css";
+import "../css/Animation.css";
 import NewLocation from "./pages/NewLocation";
 
 function App() {

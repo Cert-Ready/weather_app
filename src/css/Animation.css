@@ -1,0 +1,10 @@
+.alert {
+  animation: blinker calc(var(--pri-transition-time) * 2) linear;
+  animation-iteration-count: 2;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

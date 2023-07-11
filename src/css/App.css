@@ -107,6 +107,15 @@ input:checked + .slider:before {
   margin-top: var(--size-3);
 }
 
+.error-msg {
+  background-color: var(--gray-12);
+  border-left: var(--size-0) solid var(--accent-1);
+  border-radius: 5px;
+  font-size: var(--size-1);
+  line-height: 2;
+  text-indent: var(--size-0);
+}
+
 /* loading
     ========================================================================== */
 .loading {
@@ -156,8 +165,12 @@ input:checked + .slider:before {
   margin: auto;
 }
 
-.api-icon {
-  margin: auto;
+.api-img {
+  background-color: var(--gray-0);
+  display: block;
+  margin: var(--size-1) auto;
+  border-radius: 5px;
+  padding: calc(var(--pri-padding) / 2);
 }
 
 /* utility
@@ -191,10 +204,10 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-.center-el {
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
+.jello {
+  margin: var(--size-5) auto;
+  max-width: 1000px;
+  padding: var(--pri-padding);
 }
 
 /* large screens
