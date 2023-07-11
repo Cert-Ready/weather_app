@@ -4,9 +4,10 @@ import "../css/App.css";
 import "../css/normalize.css";
 import "../css/Animation.css";
 import NewLocation from "./pages/NewLocation";
+import Weather from "./pages/Weather";
 
 function App() {
-  const [locationData, SetLocationData] = useState({ location: "", newLocation: false });
+  const [locationQuery, SetLocationData] = useState({ location: "", newLocation: true });
 
   const ToggleLocationSearch = () => {
     SetLocationData((prev) => {
@@ -19,15 +20,15 @@ function App() {
 
   return (
     <div>
-      {!locationData.newLocation && (
+      {!locationQuery.newLocation && (
         <NewLocation
           ToggleLocationSearch={ToggleLocationSearch}
-          locationData={locationData}
+          locationData={locationQuery}
           SetLocationData={SetLocationData}
         />
       )}
 
-      {locationData.newLocation && <h2>Weather Data</h2>}
+      {locationQuery.newLocation && <Weather locationQuery={locationQuery.location} />}
     </div>
   );
 }
