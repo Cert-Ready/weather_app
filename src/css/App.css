@@ -156,6 +156,10 @@ input:checked + .slider:before {
   margin: auto;
 }
 
+.api-icon {
+  margin: auto;
+}
+
 /* utility
    ========================================================================== */
 .grid {
