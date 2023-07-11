@@ -26,6 +26,17 @@ function NewLocation(props) {
     });
   };
 
+  const SubmitForm = (e) => {
+    e.preventDefault();
+
+    if (locationData.location === "") {
+      SetErrorMsg("Please enter a location");
+      return;
+    }
+
+    ToggleLocationSearch();
+  };
+
   return (
     <div className="jello">
       <a
@@ -39,25 +50,33 @@ function NewLocation(props) {
           className="api-img"
         />
       </a>
-      <label
-        htmlFor="txt-search"
-        className="city-search grid"
-      >
-        <input
-          type="text"
-          name="location"
-          id="txt-search"
-          placeholder="Search location..."
-          onChange={ValidateInput}
-          value={locationData.location}
-        />
-        <img
-          src={SearchSVG}
-          alt="search-icon"
-          className="btn-search buttonV01 iconV01 iconV02"
-        />
+
+      <form onSubmit={SubmitForm}>
+        <label
+          htmlFor="txt-search"
+          className="city-search grid"
+        >
+          <input
+            type="text"
+            name="location"
+            id="txt-search"
+            placeholder="Search location..."
+            onChange={ValidateInput}
+            value={locationData.location}
+            autoComplete="off"
+          />
+        </label>
+
+        <button className="btn-search">
+          <img
+            src={SearchSVG}
+            alt="search-icon"
+            className="iconV01"
+          />
+        </button>
+
         <p className={errorMsg ? "alert error-msg" : ""}>{errorMsg}</p>
-      </label>
+      </form>
     </div>
   );
 }

@@ -139,30 +139,23 @@ input:checked + .slider:before {
 
 /* button
    ========================================================================== */
-.buttonV01 {
-  color: var(--gray-0);
-  cursor: pointer;
-  font-size: var(--size-fluid-1);
-}
 
-.buttonV02 {
+.btn-search {
   background-color: transparent;
-  border: none;
+  border-radius: 5px;
+  border: 1px solid var(--gray-0);
+  display: block;
+  margin: var(--size-1) auto;
+  cursor: pointer;
 }
 
 /* icon
    ========================================================================== */
 .iconV01 {
-  width: 100%;
-  max-width: var(--size-2);
   display: block;
   filter: invert(100%) sepia(7%) saturate(545%) hue-rotate(175deg) brightness(99%) contrast(98%);
-}
-
-.iconV02 {
-  border: 1px solid var(--gray-12);
-  border-radius: 5px;
-  margin: auto;
+  min-width: var(--size-2);
+  width: 100%;
 }
 
 .api-img {
