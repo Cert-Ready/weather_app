@@ -7,7 +7,7 @@ import NewLocation from "./pages/NewLocation";
 import Home from "./pages/Home";
 
 function App() {
-  const [locationQuery, SetLocationData] = useState({ location: "", newLocation: true });
+  const [locationQuery, SetLocationData] = useState({ location: "", newLocation: false });
 
   const ToggleLocationSearch = () => {
     SetLocationData((prev) => {

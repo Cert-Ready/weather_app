@@ -1,7 +1,10 @@
+import { SetTitle } from "../modules/SetTitle";
 import Weather from "./Weather/Weather";
 
 function Home(props) {
   const { locationQuery } = props;
+
+  SetTitle(`Weather - ${locationQuery}`);
 
   return (
     <div>
