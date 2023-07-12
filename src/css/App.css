@@ -199,6 +199,9 @@ input:checked + .slider:before {
 .jello {
   margin: var(--size-5) auto;
   max-width: 1000px;
+}
+
+.pri-padding {
   padding: var(--pri-padding);
 }
 
@@ -214,7 +217,7 @@ input:checked + .slider:before {
   } */
 
   .days {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .justify-end {
