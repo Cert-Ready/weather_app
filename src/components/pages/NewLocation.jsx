@@ -39,17 +39,7 @@ function NewLocation(props) {
 
   return (
     <>
-      <a
-        href="https://www.weatherapi.com/"
-        title="Free Weather API"
-        className="api-icon"
-      >
-        <img
-          src="//cdn.weatherapi.com/v4/images/weatherapi_logo.png"
-          alt="Weather data by WeatherAPI.com"
-          className="api-img"
-        />
-      </a>
+      <h1 className="text-center">Weather App</h1>
 
       <form onSubmit={SubmitForm}>
         <label
@@ -77,6 +67,18 @@ function NewLocation(props) {
 
         <p className={errorMsg ? "alert error-msg" : ""}>{errorMsg}</p>
       </form>
+
+      <a
+        href="https://www.weatherapi.com/"
+        title="Free Weather API"
+        className="api-icon"
+      >
+        <img
+          src="//cdn.weatherapi.com/v4/images/weatherapi_logo.png"
+          alt="Weather data by WeatherAPI.com"
+          className="api-img"
+        />
+      </a>
     </>
   );
 }
