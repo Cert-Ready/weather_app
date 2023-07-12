@@ -157,6 +157,10 @@ input:checked + .slider:before {
   width: 100%;
 }
 
+.iconV02 {
+  max-width: var(--size-3);
+}
+
 .api-img {
   background-color: var(--gray-0);
   display: block;
@@ -197,8 +201,8 @@ input:checked + .slider:before {
 }
 
 .jello {
-  margin: var(--size-5) auto;
   max-width: 1000px;
+  margin: auto;
 }
 
 .pri-padding {

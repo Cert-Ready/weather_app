@@ -55,7 +55,7 @@ function Location(props) {
           <img
             src={feelsLikeSVG}
             alt="feels like icon"
-            className="iconV01 grid-2x2-icon"
+            className="iconV01 iconV02 grid-2x2-icon"
           />
           <div className="feels-like-header grid-2x2-header">Feels like</div>
           <div className="feels-like-value grid-2x2-value">
@@ -68,7 +68,7 @@ function Location(props) {
           <img
             src={humiditySVG}
             alt="humidity icon"
-            className="iconV01 grid-2x2-icon"
+            className="iconV01 iconV02 grid-2x2-icon"
           />
           <div className="humidity-header grid-2x2-header">Humidity</div>
           <div className="humidity-value grid-2x2-value">{current.humidity}</div>
@@ -77,7 +77,7 @@ function Location(props) {
           <img
             src={uvSVG}
             alt="uv icon"
-            className="iconV01 grid-2x2-icon"
+            className="iconV01 iconV02 grid-2x2-icon"
           />
           <div className="uv-header grid-2x2-header">UV Index</div>
           <div className="uv-value grid-2x2-value">{current.uv}</div>
@@ -86,7 +86,7 @@ function Location(props) {
           <img
             src={windSpeedSVG}
             alt="wind speed icon"
-            className="iconV01 grid-2x2-icon"
+            className="iconV01 iconV02 grid-2x2-icon"
           />
           <div className="wind-header grid-2x2-header">Wind</div>
           <div className="wind-value grid-2x2-value">

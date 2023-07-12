@@ -38,7 +38,7 @@ function NewLocation(props) {
   };
 
   return (
-    <div className="jello">
+    <>
       <a
         href="https://www.weatherapi.com/"
         title="Free Weather API"
@@ -77,7 +77,7 @@ function NewLocation(props) {
 
         <p className={errorMsg ? "alert error-msg" : ""}>{errorMsg}</p>
       </form>
-    </div>
+    </>
   );
 }
 
