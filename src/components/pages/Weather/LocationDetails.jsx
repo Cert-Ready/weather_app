@@ -17,4 +17,3 @@ function LocationDetails(props) {
 }
 
 export default LocationDetails;
-s;
