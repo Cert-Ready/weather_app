@@ -18,6 +18,13 @@ function App() {
     });
   };
 
+  const ClearInput = () => {
+    SetLocationData({
+      location: "",
+      newLocation: false,
+    });
+  };
+
   return (
     <div className="jello">
       {!locationQuery.newLocation && (
@@ -28,7 +35,12 @@ function App() {
         />
       )}
 
-      {locationQuery.newLocation && <Home locationQuery={locationQuery.location} />}
+      {locationQuery.newLocation && (
+        <Home
+          locationQuery={locationQuery.location}
+          ClearInput={ClearInput}
+        />
+      )}
     </div>
   );
 }

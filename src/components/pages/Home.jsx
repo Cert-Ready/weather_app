@@ -1,15 +1,17 @@
-import { SetTitle } from "../modules/SetTitle";
 import Weather from "./Weather/Weather";
 
 function Home(props) {
-  const { locationQuery } = props;
-
-  SetTitle(`Weather - ${locationQuery}`);
+  const { locationQuery, ClearInput } = props;
 
   return (
     <>
       {!data && <div className=" jello loading"></div>}
-      {data && <Weather data={data} />}
+      {data && (
+        <Weather
+          data={data}
+          ClearInput={ClearInput}
+        />
+      )}
     </>
   );
 }

@@ -148,6 +148,17 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
+.button-v01 {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid var(--gray-0);
+  color: var(--gray-0);
+  cursor: pointer;
+  display: block;
+  margin: var(--size-3) auto;
+  padding: calc(var(--pri-padding) / 4) calc(var(--pri-padding) / 2);
+}
+
 /* icon
    ========================================================================== */
 .iconV01 {

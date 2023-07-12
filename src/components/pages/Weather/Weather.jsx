@@ -1,8 +1,11 @@
 import LocationDetails from "./LocationDetails";
 import Forecast from "./Forecast";
+import { SetTitle } from "../../modules/SetTitle";
 
 function Weather(props) {
-  const { data } = props;
+  const { data, ClearInput } = props;
+
+  SetTitle(`Weather - ${data.location.name}`);
 
   return (
     <>
@@ -12,6 +15,13 @@ function Weather(props) {
       />
 
       <Forecast forecast={data.forecast.forecastday} />
+
+      <button
+        onClick={ClearInput}
+        className="button-v01"
+      >
+        New Search
+      </button>
     </>
   );
 }
