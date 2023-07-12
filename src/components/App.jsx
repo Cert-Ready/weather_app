@@ -4,7 +4,7 @@ import "../css/App.css";
 import "../css/normalize.css";
 import "../css/Animation.css";
 import NewLocation from "./pages/NewLocation";
-import Weather from "./pages/Weather";
+import Home from "./pages/Home";
 
 function App() {
   const [locationQuery, SetLocationData] = useState({ location: "", newLocation: true });
@@ -28,7 +28,7 @@ function App() {
         />
       )}
 
-      {locationQuery.newLocation && <Weather locationQuery={locationQuery.location} />}
+      {locationQuery.newLocation && <Home locationQuery={locationQuery.location} />}
     </div>
   );
 }
