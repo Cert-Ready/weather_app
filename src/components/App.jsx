@@ -3,8 +3,8 @@ import "../css/index.css";
 import "../css/App.css";
 import "../css/normalize.css";
 import "../css/Animation.css";
-import NewLocation from "./pages/NewLocation";
-import Home from "./pages/Home";
+import NewLocation from "./pages/Home/NewLocation";
+import Home from "./pages/Home/Home";
 
 function App() {
   const [locationQuery, SetLocationData] = useState({ location: "", newLocation: false });

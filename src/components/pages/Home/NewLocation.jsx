@@ -1,5 +1,5 @@
-import { SetTitle } from "../modules/SetTitle";
-import SearchSVG from "../../assets/icon/search.svg";
+import { SetTitle } from "../../modules/SetTitle";
+import SearchSVG from "../../../assets/icon/search.svg";
 import { useState } from "react";
 
 function NewLocation(props) {

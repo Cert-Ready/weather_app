@@ -1,4 +1,4 @@
-import Weather from "./Weather/Weather";
+import Weather from "../Weather/Weather";
 
 function Home(props) {
   const { locationQuery, ClearInput } = props;
