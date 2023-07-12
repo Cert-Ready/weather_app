@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       {!locationQuery.newLocation && (
         <NewLocation
           ToggleLocationSearch={ToggleLocationSearch}
@@ -29,7 +29,7 @@ function App() {
       )}
 
       {locationQuery.newLocation && <Home locationQuery={locationQuery.location} />}
-    </div>
+    </>
   );
 }
 

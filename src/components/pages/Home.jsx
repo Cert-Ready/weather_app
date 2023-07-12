@@ -7,10 +7,10 @@ function Home(props) {
   SetTitle(`Weather - ${locationQuery}`);
 
   return (
-    <div>
+    <>
       {!data && <div className=" jello loading"></div>}
       {data && <Weather data={data} />}
-    </div>
+    </>
   );
 }
 
