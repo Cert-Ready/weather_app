@@ -1,4 +1,4 @@
-import Location from "./Location";
+import LocationDetails from "./LocationDetails";
 import Forecast from "./Forecast";
 
 function Weather(props) {
@@ -6,7 +6,7 @@ function Weather(props) {
 
   return (
     <>
-      <Location
+      <LocationDetails
         location={data.location}
         current={data.current}
       />
