@@ -15,7 +15,7 @@ function Forecast(props) {
                 className="day"
                 key={nanoid()}
               >
-                <div className="day">{format(new Date(el.date_epoch * 1000), " EEEE")}</div>
+                <div className="day">{format(new Date(el.date_epoch * 1000), "EEEE")}</div>
                 <div className="day-max text-medium">
                   <span className="temp-value">{el.day.maxtemp_c}</span>
                   <span className="day-max-symbol">&#176;</span>
