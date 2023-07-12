@@ -1,17 +1,17 @@
-import Forecast from "./Forecast";
+import Weather from "./Weather/Weather";
 
-function Weather(props) {
+function Home(props) {
   const { locationQuery } = props;
 
   return (
     <div>
       {!data && <div className=" jello loading"></div>}
-      {data && <Forecast data={data} />}
+      {data && <Weather data={data} />}
     </div>
   );
 }
 
-export default Weather;
+export default Home;
 
 const data = {
   location: {
