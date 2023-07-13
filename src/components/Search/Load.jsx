@@ -1,7 +1,10 @@
+import ParseData from "../../modules/ParseData";
 import Weather from "../Weather/Weather";
 
-function Home(props) {
-  const { locationQuery, ClearInput } = props;
+function Load(props) {
+  const { locationQuery, NewSearch } = props;
+
+  ParseData(data);
 
   return (
     <>
@@ -9,14 +12,14 @@ function Home(props) {
       {data && (
         <Weather
           data={data}
-          ClearInput={ClearInput}
+          NewSearch={NewSearch}
         />
       )}
     </>
   );
 }
 
-export default Home;
+export default Load;
 
 const data = {
   location: {

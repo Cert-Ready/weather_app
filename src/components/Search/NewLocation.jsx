@@ -1,6 +1,6 @@
-import { SetTitle } from "../../modules/SetTitle";
-import SearchSVG from "../../../assets/icon/search.svg";
 import { useState } from "react";
+import { SetTitle } from "../../modules/SetTitle";
+import SearchSVG from "../../assets/icon/search.svg";
 
 function NewLocation(props) {
   const { ToggleLocationSearch, locationData, SetLocationData } = props;

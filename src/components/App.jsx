@@ -3,8 +3,8 @@ import "../css/index.css";
 import "../css/App.css";
 import "../css/normalize.css";
 import "../css/Animation.css";
-import NewLocation from "./pages/Home/NewLocation";
-import Home from "./pages/Home/Home";
+import Load from "./Search/Load";
+import NewLocation from "./Search/NewLocation";
 
 function App() {
   const [locationQuery, SetLocationData] = useState({ location: "", newLocation: false });
@@ -18,7 +18,7 @@ function App() {
     });
   };
 
-  const ClearInput = () => {
+  const NewSearch = () => {
     SetLocationData({
       location: "",
       newLocation: false,
@@ -36,9 +36,9 @@ function App() {
       )}
 
       {locationQuery.newLocation && (
-        <Home
+        <Load
           locationQuery={locationQuery.location}
-          ClearInput={ClearInput}
+          NewSearch={NewSearch}
         />
       )}
     </div>
